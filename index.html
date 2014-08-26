@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>Multi-Encoder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Multi-Encoder</a>
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div>
+      <ul class="nav nav-pills nav-stacked col-md-2">
+        <li class="active"><a href="#tab_b64" data-toggle="pill">Base64</a></li>
+        <li class=""><a href="#tab_ascbin" data-toggle="pill">Binary (Ascii)</a></li>
+        <li class=""><a href="#tab_intbin" data-toggle="pill">Binary (Integer)</a></li>
+        <li class=""><a href="#tab_aschex" data-toggle="pill">Hex (Ascii)</a></li>
+        <li class=""><a href="#tab_inthex" data-toggle="pill">Hex (Integer)</a></li>
+        <li class=""><a href="#tab_jshex" data-toggle="pill">Hex (JS)</a></li>
+        <li class=""><a href="#tab_html" data-toggle="pill">HTML</a></li>
+        <li class=""><a href="#tab_ascoct" data-toggle="pill">Oct (Ascii)</a></li>
+        <li class=""><a href="#tab_intoct" data-toggle="pill">Oct (Integer)</a></li>
+        <li class=""><a href="#tab_url" data-toggle="pill">URL</a></li>
+      </ul>
+      <div class="tab-content col-md-10">
+      <div class="tab-pane active" id="tab_b64">
+          <h4>Base64 encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="b64"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="b64_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="b64_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_url">
+          <h4>URL enconding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="url"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="url_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="url_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_html">
+          <h4>HTML encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="html"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="html_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="html_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_aschex">
+          <h4>Hex (Ascii) encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="aschex"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="aschex_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="aschex_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_jshex">
+          <h4>Hex (JS) encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="jshex"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="jshex_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="jshex_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_inthex">
+          <h4>Hex (Integer) encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="inthex"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inthex_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="inthex_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_ascbin">
+          <h4>Binary (Ascii) encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="ascbin"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="ascbin_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="ascbin_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_intbin">
+          <h4>Binary (Integer) encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="intbin"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="intbin_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="intbin_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_ascoct">
+          <h4>Oct (Ascii) encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="ascoct"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="ascoct_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="ascoct_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_intoct">
+          <h4>Oct (Integer) encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="intoct"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="intoct_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="intoct_output"></code></pre>
+          </div>
+        </div>
+      </div><!-- tab content -->
+    </div><!-- end of container -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Source: https://github.com/carlo/jquery-base64 -->
+    <script src="js/jquery.base64.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+  </body>
+</html>
