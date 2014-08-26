@@ -105,7 +105,7 @@ function doEncoding(data, encType, decode, callback) {
   if(encType === "ascoct") {
     ret = "";
     if(decode) {
-      ret = data.replace(/([0-8]{3})/g,function(match) { return String.fromCharCode(parseInt(match,8))});
+      ret = data.replace(/([0-7]{3})/g,function(match) { return String.fromCharCode(parseInt(match,8))});
     } else {
       for(i=0; i < data.length; i++)
       {
@@ -122,9 +122,26 @@ function doEncoding(data, encType, decode, callback) {
   if(encType === "intoct") {
     ret = "";
     if(decode) {
-      ret = parseInt(data.replace(/[^0-8]/gi,""),8);
+      ret = parseInt(data.replace(/[^0-7]/gi,""),8);
     } else {
       ret = parseInt(data).toString(8);
+    }
+  }
+
+  if(encType === "jsoct") {
+    ret = "";
+    if(decode) {
+      ret = data.replace(/(\\[0-7]{3})/g,function(match) { return String.fromCharCode(parseInt(match.slice(1),8))});
+    } else {
+      for(i=0; i < data.length; i++)
+      {
+        binchar = data[i].charCodeAt(0).toString(8);
+        for(j = 3 - binchar.length; j > 0; j--) {
+          binchar = "0" + binchar;
+        }
+
+        ret += "\\" + binchar ;
+      }     
     }
   }
 
@@ -137,6 +154,21 @@ function doEncoding(data, encType, decode, callback) {
     }
   }
 
+  if(encType === "uni") {
+    ret = "";
+    if(decode) {
+      ret = data.replace(/(\\u[0-9a-fA-F]{4})/g,function(match) { return String.fromCharCode(parseInt(match.slice(2),16))});
+    } else {
+      for(i=0; i < data.length; i++)
+      {
+        binchar = data[i].charCodeAt(0).toString(16);
+        for(j = 4 - binchar.length; j > 0; j--) {
+          binchar = "0" + binchar;
+        }
+        ret += "\\u" + binchar;
+      }     
+    }
+  }
 
   console.log(ret);
   callback(ret);

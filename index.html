@@ -24,6 +24,8 @@
         <li class=""><a href="#tab_html" data-toggle="pill">HTML</a></li>
         <li class=""><a href="#tab_ascoct" data-toggle="pill">Oct (Ascii)</a></li>
         <li class=""><a href="#tab_intoct" data-toggle="pill">Oct (Integer)</a></li>
+        <li class=""><a href="#tab_jsoct" data-toggle="pill">Oct (JS)</a></li>
+        <li class=""><a href="#tab_uni" data-toggle="pill">Unicode</a></li>
         <li class=""><a href="#tab_url" data-toggle="pill">URL</a></li>
       </ul>
       <div class="tab-content col-md-10">
@@ -135,6 +137,28 @@
             </label>
             <hr />
             <pre><code id="intoct_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_jsoct">
+          <h4>Oct (JS) encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="jsoct"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="jsoct_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="jsoct_output"></code></pre>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab_uni">
+          <h4>Unicode encoding</h4>
+          <div class="container">
+            <textarea class="form-control" rows="5" data-id="uni"></textarea>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="uni_decode" value="decode"> Decode
+            </label>
+            <hr />
+            <pre><code id="uni_output"></code></pre>
           </div>
         </div>
       </div><!-- tab content -->
