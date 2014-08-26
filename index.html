@@ -30,135 +30,219 @@
       </ul>
       <div class="tab-content col-md-10">
       <div class="tab-pane active" id="tab_b64">
-          <h4>Base64 encoding</h4>
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="b64"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="b64_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="b64_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Base64 encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="b64"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Base64 decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="b64"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="b64_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_url">
-          <h4>URL enconding</h4>
+      <div class="tab-pane" id="tab_url">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="url"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="url_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="url_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>URL encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="url"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>URL decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="url"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="url_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_html">
-          <h4>HTML encoding</h4>
+      <div class="tab-pane" id="tab_html">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="html"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="html_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="html_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>HTML encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="html"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>HTML decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="html"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="html_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_aschex">
-          <h4>Hex (Ascii) encoding</h4>
+      <div class="tab-pane" id="tab_aschex">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="aschex"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="aschex_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="aschex_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Hex (Ascii) encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="aschex"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Hex (Ascii) decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="aschex"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="aschex_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_jshex">
-          <h4>Hex (JS) encoding</h4>
+      <div class="tab-pane" id="tab_jshex">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="jshex"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="jshex_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="jshex_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Hex (JS) encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="jshex"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Hex (JS) decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="jshex"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="jshex_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_inthex">
-          <h4>Hex (Integer) encoding</h4>
+      <div class="tab-pane" id="tab_inthex">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="inthex"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inthex_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="inthex_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Hex (Integer) encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="inthex"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Hex (Integer) decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="inthex"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="inthex_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_ascbin">
-          <h4>Binary (Ascii) encoding</h4>
+      <div class="tab-pane" id="tab_ascbin">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="ascbin"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="ascbin_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="ascbin_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Binary (Ascii) encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="ascbin"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Binary (Ascii) decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="ascbin"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="ascbin_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_intbin">
-          <h4>Binary (Integer) encoding</h4>
+      <div class="tab-pane" id="tab_intbin">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="intbin"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="intbin_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="intbin_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Binary (Integer) encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="intbin"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Binary (Integer) decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="intbin"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="intbin_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_ascoct">
-          <h4>Oct (Ascii) encoding</h4>
+      <div class="tab-pane" id="tab_ascoct">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="ascoct"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="ascoct_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="ascoct_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Octal (Ascii) encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="ascoct"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Octal (Ascii) decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="ascoct"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="ascoct_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_intoct">
-          <h4>Oct (Integer) encoding</h4>
+      <div class="tab-pane" id="tab_intoct">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="intoct"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="intoct_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="intoct_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Octal (Integer) encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="intoct"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Octal (Integer) decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="intoct"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="intoct_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_jsoct">
-          <h4>Oct (JS) encoding</h4>
+      <div class="tab-pane" id="tab_jsoct">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="jsoct"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="jsoct_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="jsoct_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Octal (JS) encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="jsoct"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Octal (JS) decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="jsoct"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="jsoct_output"></code></pre>
+            </div>
           </div>
         </div>
-        <div class="tab-pane" id="tab_uni">
-          <h4>Unicode encoding</h4>
+      <div class="tab-pane" id="tab_uni">
           <div class="container">
-            <textarea class="form-control" rows="5" data-id="uni"></textarea>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="uni_decode" value="decode"> Decode
-            </label>
-            <hr />
-            <pre><code id="uni_output"></code></pre>
+            <div class="container">
+              <div class="col-md-6">
+                <h4>Unicode encoding</h4>
+                <textarea class="form-control" rows="5" data-type="encode" data-id="uni"></textarea>
+              </div>
+              <div class="col-md-6">
+                <h4>Unicode decoding</h4>
+                <textarea class="form-control" rows="5" data-type="decode" data-id="uni"></textarea>
+              </div>
+            </div>
+            <div class="container">
+              <hr />
+              <pre><code id="uni_output"></code></pre>
+            </div>
           </div>
         </div>
       </div><!-- tab content -->

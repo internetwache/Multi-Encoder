@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('textarea').each(function(i, area) {
     $(area).on('change keyup paste blur focus', function() {
       var enc = $(area).attr("data-id");
-      var decode = $("#" + enc + "_decode").is(':checked');
+      var decode = ($(area).attr("data-type") === "encode") ? 0 : 1
       var data = $(area).val();
 
       doEncoding(data, enc, decode, function(ret) {
