@@ -22,7 +22,7 @@ function doEncoding(data, encType, decode, callback) {
   if(encType === "url") {
     ret = "";
     if(decode) {
-      ret = data.replace(/%(\d{2})/g,function(match) { return String.fromCharCode(parseInt(match.slice(1),16))});
+      ret = data.replace(/%([a-zA-Z0-9]{2})/g,function(match) { return String.fromCharCode(parseInt(match.slice(1),16))});
     } else {
       for(i=0; i < data.length; i++)
       {
